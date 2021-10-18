@@ -1,0 +1,14 @@
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+};
+.header-container a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+.nav-container a:hover {
+    background-color: aqua;
+}

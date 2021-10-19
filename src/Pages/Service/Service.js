@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { useEffect, useState } from 'react/cjs/react.development';
 
 const Service = () => {
     const { serviceId } = useParams();

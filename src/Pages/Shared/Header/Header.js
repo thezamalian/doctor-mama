@@ -21,6 +21,7 @@ const Header = () => {
                     <div className="navbar-nav fw-bold me-5 px-3">
                         <NavLink className="nav-link" aria-current="page" to="/home">Home</NavLink>
                         <NavLink className="nav-link" to="/doctors">Our Doctors</NavLink>
+                        <NavLink className="nav-link" to="/appointment">Make An Appointment</NavLink>
                         <NavLink className="nav-link" to="/treatments">Our Treatments</NavLink>
                         {
                             (user?.displayName || user?.email) ?

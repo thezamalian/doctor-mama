@@ -15,6 +15,7 @@ import Register from './Pages/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Treatments from './Pages/Treatments/Treatments';
+import Appointment from './Pages/Home/Appointment/Appointment';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/treatments">
               <Treatments></Treatments>
+            </PrivateRoute>
+            <PrivateRoute path="/appointment">
+              <Appointment></Appointment>
             </PrivateRoute>
 
             <PrivateRoute path="/services/:serviceId">

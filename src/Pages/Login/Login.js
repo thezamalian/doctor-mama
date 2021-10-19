@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
     const { handleGoogleSignIn, handleEmailSignIn } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/';
     // console.log(user.displayName);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -15,6 +20,13 @@ const Login = () => {
         setPassword(e.target.value);
     };
 
+    const handleGoogleLogin = () => {
+        handleGoogleSignIn()
+            .then(result => {
+
+                history.push(redirect_uri);
+            })
+    }
 
     return (
         <div className='text-center'>
@@ -39,7 +51,7 @@ const Login = () => {
 
                     <button onClick={(event) => { event.preventDefault(); handleEmailSignIn(email, password); }} className="w-100 btn btn-lg btn-primary" type="submit">Login</button>
 
-                    <button onClick={(event) => { event.preventDefault(); handleGoogleSignIn(); }} className="w-100 btn btn-lg btn-warning my-3 " >Continue with Google </button>
+                    <button onClick={(event) => { event.preventDefault(); handleGoogleLogin(); }} className="w-100 btn btn-lg btn-warning my-3 " >Continue with Google </button>
                 </form>
             </div>
         </div>

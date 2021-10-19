@@ -6,8 +6,8 @@ const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
 
     if (isLoading) {
-        return <div class="spinner-border text-danger" role="status">
-            <span class="visually-hidden">Loading...</span>
+        return <div className="spinner-border text-danger" role="status">
+            <span className="visually-hidden">Loading...</span>
         </div>
     }
 
@@ -16,7 +16,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         <Route
             {...rest}
             render={({ location }) =>
-                (user.email) ? (
+                (user?.email) ? (
                     children
                 ) : (
                     <Redirect

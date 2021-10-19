@@ -24,20 +24,8 @@ const useFirebase = () => {
 
     const handleGoogleSignIn = () => {
         setIsLoading(true);
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-                if (user.displayName) {
-                    user.email = 'example';
-                }
-            })
-            .finally(() => {
-                setIsLoading(false);
-            })
-            .catch((error) => {
-                setError(error.message);
-                console.log(error.message);
-            })
+        return signInWithPopup(auth, googleProvider);
+
 
     };
 
@@ -83,6 +71,9 @@ const useFirebase = () => {
                 setUser(user);
                 if (user.displayName) {
                     user.email = 'example';
+                }
+                if (user.email) {
+                    user.displayName = 'Example';
                 }
             } else {
                 setUser({});

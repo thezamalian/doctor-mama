@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react/cjs/react.development';
+import Doctor from '../Doctor/Doctor';
 
 const Doctors = () => {
+    const [doctors, setDoctors] = useState([]);
+
+    useEffect(() => {
+        fetch('./doctors.json')
+            .then(res => res.json())
+            .then(data => setDoctors(data));
+    }, []);
+
     return (
-        <div>
-            <h1>Our Doctors</h1>
+        <div className='mx-3 my-5'>
+            <h2 className='mb-3 text-primary'>Our Doctors</h2>
+
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+                {
+                    doctors.map(doctor => <Doctor
+                        key={doctor.id}
+                        doctor={doctor}
+                    ></Doctor>)
+                }
+            </div>
         </div>
     );
 };

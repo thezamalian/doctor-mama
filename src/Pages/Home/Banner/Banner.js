@@ -15,7 +15,7 @@ const Banner = () => {
 
                 <div className="carousel-inner ">
                     <div className="carousel-item active">
-                        <img height="600px" src="https://image.freepik.com/free-photo/doctor-with-co-workers-analyzing-x-ray_1098-581.jpg" class="d-block w-100" alt="..." />
+                        <img height="600px" src="https://image.freepik.com/free-photo/doctor-with-co-workers-analyzing-x-ray_1098-581.jpg" className="d-block w-100" alt="..." />
                         <div className="container">
                             <div className="carousel-caption text-start  text-dark">
                                 <h1>I am you Dr Mamma</h1>
@@ -26,7 +26,7 @@ const Banner = () => {
                     </div>
 
                     <div className="carousel-item">
-                        <img height="600px" src="https://image.freepik.com/free-photo/hands-unrecognizable-female-doctor-writing-form-typing-laptop-keyboard_1098-20374.jpg" class="d-block w-100" alt="..." />
+                        <img height="600px" src="https://image.freepik.com/free-photo/hands-unrecognizable-female-doctor-writing-form-typing-laptop-keyboard_1098-20374.jpg" className="d-block w-100" alt="..." />
                         <div className="container">
                             <div className="carousel-caption  text-dark">
                                 <h1>How does Dr Mamma works</h1>
@@ -37,7 +37,7 @@ const Banner = () => {
                     </div>
 
                     <div className="carousel-item">
-                        <img height="600px" src="https://image.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg" class="d-block w-100" alt="..." />
+                        <img height="600px" src="https://image.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg" className="d-block w-100" alt="..." />
                         <div className="container">
                             <div className="carousel-caption text-end  text-dark">
                                 <h1>We treat Online.</h1>

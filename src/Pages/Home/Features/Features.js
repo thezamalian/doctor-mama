@@ -4,45 +4,43 @@ const Features = () => {
     return (
         <div className='mx-3 my-5'>
             <h2 className='mb-3 text-primary'>Our Features</h2>
-            <div className="container">
-                <div className="row row-cols-2">
-                    <div className="col">
 
+            <div className="row ">
+                <div className="col-12  col-md-6">
+
+                    <div className="card my-3 " style={{ width: '18rem' }}>
+                        <div className="card-body">
+                            <h5 className="card-title">Register for FREE</h5>
+                            <p className="card-text">Create a secure telemedicine account using our patient portal.</p>
+                        </div>
+                    </div>
+
+                    <div className='d-flex justify-content-end'>
                         <div className="card my-3 " style={{ width: '18rem' }}>
                             <div className="card-body">
-                                <h5 className="card-title">Register for FREE</h5>
-                                <p className="card-text">Create a secure telemedicine account using our patient portal.</p>
-                            </div>
-                        </div>
-
-                        <div className='d-flex justify-content-end'>
-                            <div className="card my-3 " style={{ width: '18rem' }}>
-                                <div className="card-body">
-                                    <h5 className="card-title">Describe your symptoms</h5>
-                                    <p className="card-text">Book an appointment and tell us how you’re feeling.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card my-3" style={{ width: '18rem' }}>
-                            <div className="card-body">
-                                <h5 className="card-title">Get a diagnosis or prescription</h5>
-                                <p className="card-text">See a Doctor digitally using text, video or audio calls to save time & money.</p>
+                                <h5 className="card-title">Describe your symptoms</h5>
+                                <p className="card-text">Book an appointment and tell us how you’re feeling.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col">
-                        <img className='h-50 mb-3' src="https://image.freepik.com/free-vector/human-hand-holding-mobile-phone-with-text-messages_74855-6531.jpg" alt="" />
-                        <h4> More cool features available on the app</h4>
-                        <p>Download the Dr Mamma app for FREE today!</p>
-                        <a className='d-flex justify-content-center text-decoration-none' href="https://play.google.com/store/apps">
-                            <img height="50px" src="https://image.flaticon.com/icons/png/512/104/104122.png" alt="" />
-                            <h5> Google Play Store</h5>
-                        </a>
+
+                    <div className="card my-3" style={{ width: '18rem' }}>
+                        <div className="card-body">
+                            <h5 className="card-title">Get a diagnosis or prescription</h5>
+                            <p className="card-text">See a Doctor digitally using text, video or audio calls to save time & money.</p>
+                        </div>
                     </div>
                 </div>
+                <div className="col-12 col-md-6">
+                    <img className='h-50 mb-3' src="https://image.freepik.com/free-vector/human-hand-holding-mobile-phone-with-text-messages_74855-6531.jpg" alt="" />
+                    <h4> More cool features available on the app</h4>
+                    <p>Download the Dr Mamma app for FREE today!</p>
+                    <a className='d-flex justify-content-center text-decoration-none' href="https://play.google.com/store/apps">
+                        <img height="50px" className='' src="https://image.flaticon.com/icons/png/512/104/104122.png" alt="" />
+                        <h5> Google Play Store</h5>
+                    </a>
+                </div>
             </div>
-
 
         </div>
     );

@@ -20,7 +20,7 @@ const Banner = () => {
                             <div className="carousel-caption text-start  text-dark">
                                 <h1>I am you Dr Mamma</h1>
                                 <p>Get your medicine and prescription online.</p>
-                                <p><Link className="btn btn-lg btn-primary" to="/register">Sign up today</Link></p>
+                                <p><Link className="btn btn-lg btn-primary" to="/register">Book An Appointment</Link></p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const Banner = () => {
                             <div className="carousel-caption  text-dark">
                                 <h1>How does Dr Mamma works</h1>
                                 <p>BOOK AN APPOINTMENT. CONNECT WITH A DOCTOR. GET YOUR PRESCRIPTIONS FILLED. GET YOUR DOCTOR’S NOTE</p>
-                                <p><Link className="btn btn-lg btn-primary" to="#">Learn more</Link></p>
+                                <p><Link className="btn btn-lg btn-primary" to="#">How Does It Work</Link></p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const Banner = () => {
                             <div className="carousel-caption text-end  text-dark">
                                 <h1>We treat Online.</h1>
                                 <p>We have cured a lot of patients around the country trough online.</p>
-                                <p><Link className="btn btn-lg btn-primary" to="#">Browse gallery</Link></p>
+                                <p><Link className="btn btn-lg btn-primary" to="#">See Reviews</Link></p>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Urgent Care",
+        "img": "https://image.flaticon.com/icons/png/512/805/805693.png",
+        "shortDtails": "Our doctors treat several medical conditions, including 90% of the top issues seen by Urgent Care and the E.R.",
+        "fullDetails": ""
+    },
+    {
+        "id": 2,
+        "title": "Medical Advice",
+        "img": "https://image.freepik.com/free-vector/online-medicine-composition-with-image-patient-with-stomach-doctor-smartphone_1284-54429.jpg",
+        "shortDtails": "Not sure what to do? Get a medical consult from our highly qualified doctors by sending us your question.",
+        "fullDetails": ""
+    },
+    {
+        "id": 3,
+        "title": "Get Medicine Reminder",
+        "img": "https://as1.ftcdn.net/v2/jpg/01/22/19/88/500_F_122198876_dQTW81vMwwbSy8EV4Ceuq2oR3t8qY4v1.jpg",
+        "shortDtails": "Who remembers to take medicine on time! That’s why the web app has a medicine reminder feature which auto-sync with e-prescriptions and will remind you to take the medicine at the right time..",
+        "fullDetails": ""
+    },
+    {
+        "id": 4,
+        "title": "Addiction",
+        "img": "https://image.freepik.com/free-vector/drinking-alcohol-abstract-concept-illustration_335657-4599.jpg",
+        "shortDtails": "If you have fallen into a pattern of misusing alcohol, drugs, cigarettes, medications or food, our providers can help you recovery.",
+        "fullDetails": ""
+    },
+    {
+        "id": 5,
+        "title": "Depression and Mood",
+        "img": "https://image.freepik.com/free-vector/mental-health-understanding-brain-vector_53876-79082.jpg",
+        "shortDtails": "There are several treatment approaches for depression and mood issues that can help you start feeling better.",
+        "fullDetails": ""
+    },
+    {
+        "id": 6,
+        "title": "Therapy",
+        "img": "https://image.freepik.com/free-photo/mid-shot-woman-therapist-taking-notes-clipboard_23-2148759120.jpg",
+        "shortDtails": "Our therapists can provide a safe and confidential space for you while receiving the treatment you need to help with your life.",
+        "fullDetails": ""
+    }
+]

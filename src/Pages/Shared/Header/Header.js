@@ -4,7 +4,10 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className=' mx-auto sticky-top'>
+        <div className=' 
+        mx-auto '
+        // sticky-top
+        >
             <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ backgroundColor: '#e3f2fd' }}>
 
                 <div className="container-fluid">

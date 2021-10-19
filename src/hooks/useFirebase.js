@@ -14,29 +14,44 @@ import initializeAuthentication from '../Firebase/firebase.init';
 initializeAuthentication();
 
 const useFirebase = () => {
-
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
 
     const handleGoogleSignIn = () => {
+        setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                setUser(result)
+                setUser(result.user);
+                if (user.displayName) {
+                    user.email = 'example';
+                }
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
             .catch((error) => {
                 setError(error.message);
                 console.log(error.message);
-            });
+            })
+
     };
 
     const handleEmailSignIn = (email, password) => {
+        setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user)
+                if (user.email) {
+                    user.displayName = 'Example'
+                }
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
             .catch((error) => {
                 setError(error.message);
@@ -45,9 +60,16 @@ const useFirebase = () => {
     };
 
     const handleEmailRegister = (email, password) => {
+        setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user)
+                if (user.email) {
+                    user.displayName = 'Example'
+                }
+            })
+            .finally(() => {
+                setIsLoading(false);
             })
             .catch((error) => {
                 setError(error.message);
@@ -59,21 +81,30 @@ const useFirebase = () => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
+                if (user.displayName) {
+                    user.email = 'example';
+                }
             } else {
                 setUser({});
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
     }, [])
 
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => setUser({}))
+            .finally(() => {
+                setIsLoading(false);
+            })
     };
 
     return {
         user,
         error,
+        isLoading,
         handleGoogleSignIn,
         handleEmailSignIn,
         handleEmailRegister,

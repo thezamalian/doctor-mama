@@ -7,8 +7,10 @@ import './App.css';
 import AuthProvider from './contexts/AuthProvider';
 import Doctors from './Pages/Doctors/Doctors';
 import Home from './Pages/Home/Home/Home';
+import Service from './Pages/Service/Service';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -25,12 +27,16 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/doctors">
+            <PrivateRoute path="/doctors">
               <Doctors></Doctors>
-            </Route>
-            <Route path="/treatments">
+            </PrivateRoute>
+            <PrivateRoute path="/treatments">
               <Treatments></Treatments>
-            </Route>
+            </PrivateRoute>
+
+            <PrivateRoute path="/services/:serviceId">
+              <Service></Service>
+            </PrivateRoute>
 
             <Route path="/login">
               <Login></Login>

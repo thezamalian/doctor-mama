@@ -47,7 +47,7 @@ const Register = () => {
 
                     <button onClick={(event) => { event.preventDefault(); handleEmailRegister(email, password); }} className="w-100 btn btn-lg btn-primary" type="submit">Register</button>
 
-                    <button onClick={(event) => { event.preventDefault(); handleGoogleSignIn(); }} className="w-100 btn btn-lg btn-warning my-3 " >Google </button>
+                    <button onClick={(event) => { event.preventDefault(); handleGoogleSignIn(); }} className="w-100 btn btn-lg btn-warning my-3 " >Continue with Google </button>
                 </form>
             </div>
         </div>

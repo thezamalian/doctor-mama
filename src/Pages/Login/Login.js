@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { handleGoogleSignIn, handleEmailSignIn } = useAuth();
+    const { error, handleGoogleSignIn, handleEmailSignIn } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/';
@@ -33,6 +33,7 @@ const Login = () => {
             <h2>Please Login</h2>
             <div className=" mx-auto w-25 ">
                 <form>
+                    <h6 className='text-danger '> {error}</h6>
                     <div className="form-floating my-1">
                         <input onChange={handleEmailInput} type="email" className="form-control" id="floatingInput" required />
                         <label htmlFor="floatingInput">Email address</label>

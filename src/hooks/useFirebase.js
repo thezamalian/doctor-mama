@@ -33,7 +33,8 @@ const useFirebase = () => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                setUser(result.user)
+                setUser(result.user);
+                setError('');
                 if (user.email) {
                     user.displayName = 'Example'
                 }
@@ -51,7 +52,8 @@ const useFirebase = () => {
         setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                setUser(result.user)
+                setUser(result.user);
+                setError('');
                 if (user.email) {
                     user.displayName = 'Example'
                 }

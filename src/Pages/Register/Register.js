@@ -15,7 +15,7 @@ const Register = () => {
         setPassword(e.target.value);
     };
     return (
-        <div className='text-center'>
+        <div className='text-center py-5' style={{ backgroundColor: 'mistyRose', borderRadius: '20px', }}>
             <h2>Please Register</h2>
             <div className="form-signin mx-auto w-25 ">
                 <form>

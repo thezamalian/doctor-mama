@@ -2,21 +2,21 @@ import React from 'react';
 
 const Appointment = () => {
     return (
-        <div className='row mx-3 my-5 py-3' style={{ backgroundColor: 'paleGoldenRod', borderRadius: '20px' }}>
+        <div className='row mx-3  my-3 ' style={{ backgroundColor: 'mistyRose', borderRadius: '10px', }}>
 
             <div className=' col-md-4 w-75 mx-auto my-3'>
                 <img className='img-fluid' src="https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg" alt="" />
             </div>
 
-            <div className='col-12 col-md-6 col-lg-6 w-75 mx-auto'>
+            <div className='col-12 col-md-5 col-lg-6 w-75 mx-auto'>
                 <h2>Make an Appointment Now</h2>
 
-                <form className="row g-3 mt-3">
 
+                <form className="row g-3 mt-3">
                     <div className="col-12 col-md-6 form-floating">
                         <select id="inputState" className="form-select">
                             <option selected>Select Department*</option>
-                            <option>Gynaecology</option>
+                            <option>Gynecology</option>
                             <option>Cardiology</option>
                             <option>Medicine</option>
                         </select>
@@ -24,9 +24,9 @@ const Appointment = () => {
                     <div className="col-12 col-md-6 form-floating">
                         <select id="inputState" className="form-select">
                             <option selected>Choose Doctor*</option>
-                            <option>Dr. Kalvin</option>
+                            <option>Dr. Calvin</option>
                             <option>Dr. Mark </option>
-                            <option>Dr. Zinia</option>
+                            <option>Dr. Zin</option>
                             <option>Dr. Johnson</option>
                         </select>
                     </div>
@@ -58,20 +58,19 @@ const Appointment = () => {
 
 
 
-                    <div className="col-12">
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck" />
-                            <label className="form-check-label" htmlFor="gridCheck">
+                    <div className="col-12 col-md-12">
+                        <div className="form-check w-25 mx-auto">
+                            <input className="form-check-input ms-3" type="checkbox" id="gridCheck" />
+                            <label className="form-check-label me-5" htmlFor="gridCheck">
                                 Check me out
                             </label>
                         </div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 mb-3">
                         <button type="submit" className="btn btn-success">Make Appointment</button>
                     </div>
                 </form>
             </div>
-
 
         </div>
     );

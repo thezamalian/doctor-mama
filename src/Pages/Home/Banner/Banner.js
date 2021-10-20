@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className='mx-3 my-3'>
+        <div className='mx-3 mb-3 mt-n3'>
             <div id="myCarousel" className="carousel slide " data-bs-ride="carousel">
 
                 <div className="carousel-indicators">

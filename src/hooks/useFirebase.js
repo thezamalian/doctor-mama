@@ -71,12 +71,12 @@ const useFirebase = () => {
         const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-                if (user.displayName) {
-                    user.email = 'example';
-                }
-                if (user.email) {
-                    user.displayName = 'Example';
-                }
+                // if (user.displayName) {
+                //     user.email = 'example';
+                // }
+                // if (user.email) {
+                //     user.displayName = 'Example';
+                // }
             } else {
                 setUser({});
             }

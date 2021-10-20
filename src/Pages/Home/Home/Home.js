@@ -8,6 +8,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <h2 className='mt-5 text-primary'>Our Services</h2>
             <Services></Services>
             <Features></Features>
             <Appointment></Appointment>

@@ -28,7 +28,7 @@ const Login = () => {
     }
 
     return (
-        <div className='text-center'>
+        <div className='text-center py-5' style={{ backgroundColor: 'mistyRose', borderRadius: '20px', }}>
             <h2>Please Login</h2>
             <div className=" mx-auto row ">
                 <div className='col-0 col-md-4'></div>

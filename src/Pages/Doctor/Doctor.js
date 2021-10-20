@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Doctor = ({ doctor }) => {
     const { name, img, designation, department, hospital, education } = doctor;
@@ -12,7 +13,7 @@ const Doctor = ({ doctor }) => {
                     <p className="card-text">Education: {education} </p>
                     <p className="card-text">Hospital: {hospital} </p>
                 </div>
-                <button className='btn btn-primary'> Make Appointment</button>
+                <Link to="/appointment"><button className='btn btn-info'> Make Appointment</button></Link>
             </div>
         </div>
     );

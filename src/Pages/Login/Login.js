@@ -23,7 +23,6 @@ const Login = () => {
     const handleGoogleLogin = () => {
         handleGoogleSignIn()
             .then(result => {
-
                 history.push(redirect_uri);
             })
     }
@@ -31,8 +30,9 @@ const Login = () => {
     return (
         <div className='text-center'>
             <h2>Please Login</h2>
-            <div className=" mx-auto w-25 ">
-                <form>
+            <div className=" mx-auto row ">
+                <div className='col-0 col-md-4'></div>
+                <form className='col-12 col-md-4'>
                     <h6 className='text-danger '> {error}</h6>
                     <div className="form-floating my-1">
                         <input onChange={handleEmailInput} type="email" className="form-control" id="floatingInput" required />

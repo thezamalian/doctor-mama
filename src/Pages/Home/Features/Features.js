@@ -32,7 +32,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-6">
-                    <img className='h-50 mb-3' src="https://image.freepik.com/free-vector/human-hand-holding-mobile-phone-with-text-messages_74855-6531.jpg" alt="" />
+                    <img className='h-50 mb-3 img-fluid' src="https://image.freepik.com/free-vector/human-hand-holding-mobile-phone-with-text-messages_74855-6531.jpg" alt="" />
                     <h4> More cool features available on the app</h4>
                     <p>Download the Dr Mamma app for FREE today!</p>
                     <a className='d-flex justify-content-center text-decoration-none' href="https://play.google.com/store/apps">
